@@ -1,0 +1,39 @@
+class Program
+{
+	int arr[100000];
+
+	int main()
+	{
+		int num,i,sum,max,min;
+		sum = 0;
+		max = 0;
+		min = 0;
+
+		callout("scanf","%d",num);
+
+		for i=0,num
+		{
+			callout("scanf","%d",arr[i]);
+		}
+
+		max = arr[0];
+		min = arr[0];
+
+		for i=0,num
+		{
+			if(max<arr[i])
+			{
+				max = arr[i];
+			}
+			if(arr[i]<min)
+			{
+				min = arr[i];
+			}
+		}
+
+		callout("printf"," max = %d\n", max);
+		callout("printf"," min = %d\n", min);
+
+		return 0;
+	}	
+}

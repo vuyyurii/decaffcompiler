@@ -1,0 +1,26 @@
+class Program
+{
+	int arr[100000];
+
+	int main()
+	{
+		int num,i,sum;
+		sum = 0;
+
+		callout("scanf","%d",num);
+
+		for i=0,num
+		{
+			callout("scanf","%d",arr[i]);
+		}
+
+		for i=0,num
+		{
+			sum += arr[i];
+		}
+
+		callout("printf","%d",sum);
+
+		return 0;
+	}	
+}

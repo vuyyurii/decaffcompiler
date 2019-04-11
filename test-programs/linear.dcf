@@ -1,0 +1,41 @@
+class Program
+{
+	int arr[100000];
+
+	int main()
+	{
+		int num,i,sum,ans;
+		sum = 0;
+		ans = 0;
+
+		callout("scanf","%d",num);
+
+		for i=0,num
+		{
+			callout("scanf","%d",arr[i]);
+		}
+
+		callout("scanf","%d",n);
+
+		for i=0,num
+		{
+			if(arr[i] == n)
+			{
+				ans = 1;
+				break;
+			}
+		}
+
+		if(ans==0)
+		{
+			callout("printf","Given number is not present in the array");
+		}
+
+		if(ans==1)
+		{
+			callout("printf","Given number is present in the array");
+		}
+
+		return 0;
+	}	
+}
